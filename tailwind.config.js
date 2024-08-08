@@ -9,6 +9,9 @@ export default {
       backgroundImage:{
         "bodyImg": "url('src/assets/Images/body.svg')",
         "centerBG": "url('src/assets/Images/BG.svg')"
+      },
+      listStyleType:{
+        "number":'number'
       }
     },
   },
