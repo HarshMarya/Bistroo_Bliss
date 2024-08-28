@@ -10,6 +10,7 @@ import Contact from './pages/Contact'
 import BookTable from './pages/BookTable'
 import Footer from './components/Footer'
 import Page1 from './components/Page1'
+import GoToTop from './components/GoToTop'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -27,6 +28,7 @@ function App() {
       <Route path='/book-a-table' element={<BookTable/>}/>
       <Route path='/page1' element={<Page1/>}/>
     </Routes>
+    <GoToTop/>
     <Footer/>
     </BrowserRouter>
     </>

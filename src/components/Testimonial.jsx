@@ -30,26 +30,14 @@ const data = [
 function Testimonial() {
   return (
     <>
-      <section className="p-4 md:p-20 mx-auto w-10/12">
-        <p className="text-5xl playfair-display text-center mb-20">
+      <section className="p-4 md:p-10 xl:p-20 mx-auto w-10/12">
+        <p className="text-5xl playfair-display text-center mb-10">
           What Our Customers Say
         </p>
         <div className="flex justify-center gap-10 flex-wrap">
-          {/* <div className='bg-[#f9f9f7] w-[300px] p-6 flex flex-col gap-4'>
-                <p className='text-[#AD343E] text-2xl font-semibold'>“The best restaurant”</p>
-                <p>Last night, we dined at place and were simply blown away. From the moment we stepped in, we were enveloped in an inviting atmosphere and greeted with warm smiles.</p>
-                <hr className='bg-[#DBDFD0] h-[2px] w-10/12 mx-auto'/>
-                <div className='flex gap-4 items-center my-4'>
-                    <img src={img1} alt="" />
-                    <div>
-                    <p className='font-bold'>Sophire Robson</p>
-                    <p>Los Angeles, CA</p>
-                    </div>
-                </div>
-            </div> */}
           {data.map((v, i) => {
             return (
-              <div className="bg-[#f9f9f7] w-[400px] p-6 flex flex-col gap-4 rounded-xl">
+              <div className="bg-[#f9f9f7] w-[400px] p-6 flex flex-col gap-4 rounded-xl shadow-lg" key={i}>
                 <p className="text-[#AD343E] text-2xl font-semibold">
                   {v.comment}
                 </p>

@@ -16,7 +16,7 @@ function Footer() {
   return (
     <>
       <footer className="bg-[#474747] text-white">
-        <div className="p-4 md:p-20 mx-auto w-10/12 flex justify-between flex-wrap">
+        <div className="p-4 md:p-20 mx-auto w-10/12 flex justify-between flex-wrap gap-4">
           {/* Left section */}
           <div>
             <div>
@@ -30,7 +30,7 @@ function Footer() {
                   Bistro Bliss
                 </span>
               </Link>
-              <div className="my-8">
+              <div className="my-6">
                 <p>
                   In the new era of technology we look a in the future
                 </p>
@@ -54,7 +54,7 @@ function Footer() {
             </div>
           </div>
           {/* Links center section */}
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-2 md:gap-4">
             <p className="font-semibold text-xl mb-4">Utility pages</p>
             <Link to="/">Home</Link>
             <Link to="/about-us">About</Link>
@@ -63,16 +63,17 @@ function Footer() {
             <Link to="/contact-us">Contact Us</Link>
           </div>
           {/* Right section */}
-          <div className="w-1/3">
+          <div className="w-full 2xl:w-1/3 ">
             <p className="font-semibold text-xl mb-4">Follow Us On Instagram</p>
             <div className="flex flex-wrap gap-4">
-              <img src={fries} alt="" className="rounded-xl" />
-              <img src={omelate} alt="" className="rounded-xl" />
-              <img src={pancake} alt="" className="rounded-xl" />
-              <img src={chilli} alt="" className="rounded-xl" />
+              <img src={fries} alt="" className="rounded-xl w-[100px] md:w-fit" />
+              <img src={omelate} alt="" className="rounded-xl w-[100px] md:w-fit" />
+              <img src={pancake} alt="" className="rounded-xl w-[100px] md:w-fit" />
+              <img src={chilli} alt="" className="rounded-xl w-[100px] md:w-fit" />
             </div>
           </div>
         </div>
+        {/* copyright */}
         <div className="text-center py-4">Copyright © {year}. All Rights Reserved</div>
       </footer>
     </>

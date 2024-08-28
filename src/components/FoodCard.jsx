@@ -90,6 +90,7 @@ function FoodCard() {
                   src={val.img}
                   alt=""
                   className="rounded-t-xl hover:scale-105 transition-all"
+                  loading="lazy"
                 />
                 <div className="flex flex-col gap-1 p-6">
                   <p className="font-semibold text-[#737865]">{val.date}</p>

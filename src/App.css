@@ -3,4 +3,25 @@
 .playfair-display{
   font-family: "Playfair Display", serif;
   font-weight: 600;
+  line-height: 100px;
+  /* letter-spacing: 1rem; */
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.animate-btn{
+  animation: gototop 1.2s linear infinite alternate-reverse;
+}
+
+@keyframes gototop {
+  0%{
+    transform: translateY(-0.5rem);
+  }
+  100%{
+    transform: translateY(1rem);
+  }
 }

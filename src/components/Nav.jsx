@@ -10,11 +10,13 @@ import logo from "../assets/Images/logo.svg";
 import { IoCloseSharp } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import bodyImg from "../assets/Images/body.svg"
+import GoToTop from "./GoToTop";
 
 function Nav() {
   const [nav, setNav] = useState(false);
   const [active, setActive] = useState(false)
   return (
+    <>
     <header>
       <nav className="">
         <div className="top hidden sm:flex justify-around text-white bg-[#474747] py-2">
@@ -115,6 +117,7 @@ function Nav() {
         </div>
       </nav>
     </header>
+    </>
   );
 }
 

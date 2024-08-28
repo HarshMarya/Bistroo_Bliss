@@ -14,92 +14,75 @@ import { Link } from "react-router-dom";
 import { BsClockHistory } from "react-icons/bs";
 import { MdOutlineReceiptLong } from "react-icons/md";
 import { IoCartOutline } from "react-icons/io5";
+import AboutComp from "./AboutComp";
+
+const cardData = [
+  {
+    img: cup,
+    content: "Breakfast",
+    Des: "In the new era of technology we look in the future with certainty and pride for our life.",
+    link: "Explore Menu",
+  },
+  {
+    img: bowl,
+    content: "Main Dishes",
+    Des: "In the new era of technology we look in the future with certainty and pride for our life.",
+    link: "Explore Menu",
+  },
+  {
+    img: glass,
+    content: "Drinks",
+    Des: "In the new era of technology we look in the future with certainty and pride for our life.",
+    link: "Explore Menu",
+  },
+  {
+    img: cake,
+    content: "Desserts",
+    Des: "In the new era of technology we look in the future with certainty and pride for our life.",
+    link: "Explore Menu",
+  },
+];
 
 function MenuComp() {
   return (
     <>
-      <section className="relative p-4 md:p-20 mx-auto w-10/12">
-        <p className="text-center text-[60px] playfair-display mb-10">
+      {/* browse menu section  */}
+      <section className="relative p-4 md:p-10 xl:p-20 mx-auto w-10/12">
+        <p className="text-center text-5xl leading-[58px] playfair-display mb-4 md:mb-10 ">
           Browse Our Menu
         </p>
-        <div className="flex justify-center items-center gap-6 flex-wrap">
-          {/* card-1 */}
-          <div className="border-[1px] border-gray-200 rounded-lg w-[300px] h-[350px] flex flex-col justify-center items-center p-10 gap-4">
-            <div className="w-[100px] h-[100px] bg-[#f2f3f0] rounded-full p-6">
-              <img src={cup} alt="" className="w-full" />
-            </div>
-            <p className="text-2xl font-semibold">Breakfast</p>
-            <p>
-              In the new era of technology we look in the future with certainty
-              and pride for our life.
-            </p>
-            <Link
-              to="/our-menu"
-              className="text-[#AD343E] font-semibold hover:underline"
-            >
-              Explore Menu
-            </Link>
-          </div>
-          {/* card-2 */}
-          <div className="border-[1px] border-gray-200 rounded-lg w-[300px] h-[350px] flex flex-col justify-center items-center p-10 gap-4">
-            <div className="w-[100px] h-[100px] bg-[#f2f3f0] rounded-full p-6">
-              <img src={bowl} alt="" className="w-full" />
-            </div>
-            <p className="text-2xl font-semibold">Main Dishes</p>
-            <p>
-              In the new era of technology we look in the future with certainty
-              and pride for our life.
-            </p>
-            <Link
-              to="/our-menu"
-              className="text-[#AD343E] font-semibold hover:underline"
-            >
-              Explore Menu
-            </Link>
-          </div>
-          {/* card-3 */}
-          <div className="border-[1px] border-gray-200 rounded-lg w-[300px] h-[350px] flex flex-col justify-center items-center p-10 gap-4 ">
-            <div className="w-[100px] h-[100px] bg-[#f2f3f0] rounded-full p-7">
-              <img src={glass} alt="" className="w-full" />
-            </div>
-            <p className="text-2xl font-semibold">Drinks</p>
-            <p>
-              In the new era of technology we look in the future with certainty
-              and pride for our life.
-            </p>
-            <Link
-              to="/our-menu"
-              className="text-[#AD343E] font-semibold hover:underline"
-            >
-              Explore Menu
-            </Link>
-          </div>
-          {/* card-4 */}
-          <div className="border-[1px] border-gray-200 rounded-lg w-[300px] h-[350px] flex flex-col justify-center items-center p-10 gap-4">
-            <div className="w-[100px] h-[100px] bg-[#f2f3f0] rounded-full p-6">
-              <img src={cake} alt="" className="w-full" />
-            </div>
-            <p className="text-2xl font-semibold">Desert</p>
-            <p>
-              In the new era of technology we look in the future with certainty
-              and pride for our life.
-            </p>
-            <Link
-              to="/our-menu"
-              className="text-[#AD343E] font-semibold hover:underline"
-            >
-              Explore Menu
-            </Link>
-          </div>
+        <div className="flex gap-4 justify-center items-start flex-wrap">
+          {cardData.map((v, i) => {
+            return (
+              <div
+                className="border-[1px] border-gray-200 rounded-lg w-[240px] h-[310px] sm:w-[280px] sm:h-[320px] flex flex-col justify-start items-center p-6 gap-4 text-center shadow-lg"
+                key={i}
+              >
+                <div className="w-[60px] h-[60px] sm:w-[100px] sm:h-[100px] bg-[#f2f3f0] rounded-full p-4 sm:p-6 ">
+                  <img src={v.img} alt="" className="w-full text-[#AD343E]" />
+                </div>
+                <p className="text-2xl font-semibold">{v.content}</p>
+                <p>{v.Des}</p>
+                <Link
+                  to="/our-menu"
+                  className="text-[#AD343E] font-bold md:font-semibold hover:underline"
+                >
+                  {v.link}
+                </Link>
+              </div>
+            );
+          })}
         </div>
       </section>
-
-      <section className="p-4 md:p-20 mx-auto w-10/12">
-        <p className="text-5xl playfair-display mb-10 w-full md:w-5/12">
+      {/* about section component */}
+      <AboutComp />
+      {/* offer services section */}
+      <section className="p-4 md:p-10 xl:p-20 mx-auto w-10/12">
+        <p className="text-5xl playfair-display mb-10 w-full lg:w-8/12">
           We also offer unique services for your events
         </p>
-        <div className="flex justify-center items-center md:justify-between gap-4 flex-wrap">
-          <div className="w-[300px]">
+        <div className="flex items-center gap-4 justify-items-center flex-wrap">
+          <div className="w-full md:w-[280px] lg:w-[300px]">
             <img src={catering} alt="" />
             <p className="text-xl font-semibold my-2">Catering</p>
             <p>
@@ -107,24 +90,24 @@ function MenuComp() {
               for life.
             </p>
           </div>
-          <div className="w-[300px]">
-            <img src={birthday} alt="" className="rounded-xl" />
+          <div className="w-full md:w-[280px] xl:w-[300px]">
+            <img src={birthday} alt="" />
             <p className="text-xl font-semibold my-2">Birthday</p>
             <p>
               In the new era of technology we look in the future with certainty
               for life.
             </p>
           </div>
-          <div className="w-[300px]">
-            <img src={wedding} alt="" className="rounded-xl" />
+          <div className="w-full md:w-[280px] xl:w-[300px]">
+            <img src={wedding} alt="" />
             <p className="text-xl font-semibold my-2">Wedding</p>
             <p>
               In the new era of technology we look in the future with certainty
               for life.
             </p>
           </div>
-          <div className="w-[300px]">
-            <img src={party} alt="" className="rounded-xl" />
+          <div className="w-full md:w-[280px] xl:w-[300px]">
+            <img src={party} alt="" />
             <p className="text-xl font-semibold my-2">Events</p>
             <p>
               In the new era of technology we look in the future with certainty
@@ -133,20 +116,23 @@ function MenuComp() {
           </div>
         </div>
       </section>
-
+      {/* fast food delivery */}
       <section className="bg-[#F9F9F7]">
-        <div className="p-4 md:p-20 mx-auto w-10/12">
-          <div className="flex justify-between flex-wrap">
-            <div className="flex gap-2 md:gap-6 flex-wrap">
-              <div className="w-[300px] md:w-[400px] ">
+        <div className="p-4 md:p-10 xl:p-20 mx-auto w-10/12">
+          <div className="flex justify-between flex-wrap-reverse">
+            {/* image Contaienr */}
+            <div className="flex gap-2 md:gap-6 flex-wrap justify-center">
+              <div className="w-fit md:w-10/12 lg:w-[550px] 2xl:w-[400px]">
                 <img src={chef} alt="" className="rounded-xl" />
               </div>
-              <div className="md:my-6">
-                <img src={curry} alt="" className="my-4" />
+              <div className="md:my-6 hidden xl:block">
+                <img src={curry} alt="" className="my-4"  />
                 <img src={kabab} alt="" />
               </div>
             </div>
-            <div className="w-ful md:w-1/3 flex flex-col justify-center gap-6">
+
+            {/* Text Contaienr */}
+            <div className="w-full 2xl:w-1/3 flex flex-col justify-center gap-6 my-4">
               <p className="text-5xl playfair-display">
                 Fastest Food Delivery in City
               </p>

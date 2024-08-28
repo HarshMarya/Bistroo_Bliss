@@ -33,21 +33,21 @@ function Artical() {
   return (
     <>
       <section className="bg-[#F9F9F7]">
-        <div className="p-4 md:p-20 mx-auto w-10/12">
-          <div className="flex justify-between mb-10">
+        <div className="p-4 md:p-10 xl:p-15 mx-auto w-10/12">
+          <div className="flex justify-between flex-wrap gap-4 md:gap-2 mb-10">
             <p className="text-5xl playfair-display">Our Blog & Articles</p>
             <Link
               to="/blog-page"
-              className="p-4 rounded-full bg-[#AD343E] text-white"
+              className="p-2 lg:p-4 rounded-full bg-[#AD343E] text-white"
             >
               Read all Articles
             </Link>
           </div>
           {/* cards */}
-          <div className="flex justify-between gap-10">
+          <div className="flex justify-between flex-wrap gap-4">
             {/* card-1 */}
-            <div className="w-[800px] rounded-xl shadow-xl bg-white">
-              <img src={burger} alt="" className="hover:scale-105 transition-all" />
+            <div className="w-[350px] xl:w-[450px] h-fit rounded-xl shadow-xl bg-white">
+              <img src={burger} alt="" className="hover:scale-105 transition-all border-t-xl" />
               <div className="flex flex-col gap-4 p-6">
                 <p className="font-semibold text-[#737865]">January 3, 2023</p>
                 <p className="font-semibold text-xl">
@@ -62,7 +62,7 @@ function Artical() {
               </div>
             </div>
             {/* 4-cards */}
-            <div className="flex flex-wrap gap-10 justify-center w-full">
+            <div className="flex flex-wrap gap-6 justify-center w-full">
               {cards.map((val, ind) => {
                 return (
                   <div className="w-[300px] rounded-xl shadow-xl bg-white" key={ind}>

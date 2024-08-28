@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom'
 function Main() {
   return (
     <>
-      <main className="bg-bodyImg w-full h-screen bg-no-repeat bg-contain xl:bg-cover flex justify-center items-center">
-        <div className="text-center w-1/3">
+      <main className="bg-bodyImg w-full h-screen bg-no-repeat bg-contain xl:bg-cover ">
+        <div className="text-center w-1/3 mx-auto">
           <h1 className="md:text-[90px] playfair-display">Best food for your taste</h1>
           <p className="my-4">
             Discover delectable cuisine and unforgettable moments in our
