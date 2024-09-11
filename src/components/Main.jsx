@@ -12,12 +12,12 @@ function Main() {
             welcoming, culinary haven.
           </p>
           <div className="flex gap-4 font-semibold justify-center">
-          <p className="border-[2px] bg-[#AD343E] text-white border-[#AD343E] py-4 px-8 rounded-full cursor-pointer">
+          <div className="border-[2px] bg-[#AD343E] text-white border-[#AD343E] md:py-4 px-8 rounded-full cursor-pointer">
             <Link to='/book-a-table'>Book A table</Link>
-          </p>
-          <p className="border-[2px] border-black py-4 px-8 rounded-full cursor-pointer">
+          </div>
+          <div className="border-[2px] border-black py-4 px-8 rounded-full cursor-pointer">
             <Link to='/our-menu'>Explore Menu</Link>
-          </p>
+          </div>
           </div>
         </div>
       </main>

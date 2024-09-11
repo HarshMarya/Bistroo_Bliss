@@ -83,7 +83,7 @@ function FoodCard() {
           return (
             <Link to="/page1">
               <div
-                className="w-[300px] rounded-xl shadow-xl bg-white"
+                className="w-[280px] lg:w-[300px] rounded-xl shadow-xl bg-white"
                 key={ind}
               >
                 <img

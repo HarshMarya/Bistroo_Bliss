@@ -9,53 +9,60 @@ import f5 from "../assets/Images/f5.svg";
 import f6 from "../assets/Images/f6.svg";
 import f7 from "../assets/Images/f7.svg";
 import f8 from "../assets/Images/f8.svg";
+import f9 from "../assets/Images/f4.svg";
 import Companies from "../components/Companies";
 
 const cards = [
   {
-    img: f1,
+    img: f8,
     price: "$ 9.99",
     dish: "Fried Eggs",
     des: "Made with eggs, lettuce, salt, oil and other ingredients.",
   },
   {
-    img: f2,
+    img: f7,
     price: "$ 15.99",
     dish: "Hawaiian Pizza",
     des: "Made with eggs, lettuce, salt, oil and other ingredients.",
   },
   {
-    img: f3,
+    img: f6,
     price: "$ 7.25",
     dish: "Martinez Cocktail",
     des: "Made with eggs, lettuce, salt, oil and other ingredients.",
   },
   {
-    img: f4,
+    img: f5,
     price: "$ 20.99",
     dish: "Butterscottch Cake",
     des: "Made with eggs, lettuce, salt, oil and other ingredients.",
   },
   {
-    img: f5,
+    img: f1,
     price: "$ 5.89",
     dish: "mint Lemonade",
     des: "Made with eggs, lettuce, salt, oil and other ingredients.",
   },
   {
-    img: f6,
+    img: f2,
     price: "$ 18.60",
     dish: "Chocolate Icecream",
     des: "Made with eggs, lettuce, salt, oil and other ingredients.",
   },
   {
-    img: f7,
+    img: f3,
     price: "$ 9.99",
     dish: "Cheese Burger",
     des: "Made with eggs, lettuce, salt, oil and other ingredients.",
   },
   {
-    img: f8,
+    img: f4,
+    price: "$ 9.99",
+    dish: "Classic Waffles",
+    des: "Made with eggs, lettuce, salt, oil and other ingredients.",
+  },
+  {
+    img: f9,
     price: "$ 9.99",
     dish: "Classic Waffles",
     des: "Made with eggs, lettuce, salt, oil and other ingredients.",
@@ -66,7 +73,7 @@ function Menu() {
   return (
     <>
       <section>
-        <div className="p-4 md:p-20 mx-auto w-10/12 text-center">
+        <div className="p-4 md:p-10 mx-auto w-10/12 text-center">
           <p className="text-[96px] playfair-display font-normal">Our Menu</p>
           <p>We consider all the drivers of change gives you the components </p>
           <p>you need to change to create a truly happens.</p>
@@ -92,26 +99,26 @@ function Menu() {
           </button>
         </div>
         {/* Dishes cards */}
-        <div className="flex flex-wrap justify-center w-10/12 mx-auto gap-8 my-10">
+        <div className="flex flex-wrap justify-center w-10/12 mx-auto gap-4 my-10">
           {cards.map((v, i) => {
             return (
-              <div
-                className="w-[300px] border-[1px] border-[#DBDFD0] rounded-xl text-center"
-                key={i}
-              >
-                <img src={v.img} alt="" className="rounded-t-xl" />
-                <div className="p-4">
-                  <p className="playfair-display text-[#AD343E] text-3xl">
-                    {v.price}
-                  </p>
-                  <p className="text-xl font-semibold my-2">{v.dish}</p>
-                  <p>{v.des}</p>
+                <div
+                  className="w-[300px] border-[1px] border-[#DBDFD0] rounded-xl text-center"
+                  key={i}
+                >
+                  <img src={v.img} alt="" className="rounded-t-xl" />
+                  <div className="p-4">
+                    <p className="playfair-display text-[#AD343E] text-3xl">
+                      {v.price}
+                    </p>
+                    <p className="text-xl font-semibold my-2">{v.dish}</p>
+                    <p>{v.des}</p>
+                  </div>
                 </div>
-              </div>
             );
           })}
         </div>
-        <Companies/>
+        <Companies />
       </section>
     </>
   );

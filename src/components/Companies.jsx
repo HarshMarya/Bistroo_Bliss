@@ -21,7 +21,7 @@ function Companies() {
   return (
     <>
       <section className="bg-[#F9F9F7]">
-        <div className="p-4 md:p-20 mx-auto w-10/12 flex">
+        <div className="p-4 md:p-10 mx-auto w-10/12 flex flex-wrap xl:flex-nowrap justify-between items-center">
           <div>
             <p className="text-5xl playfair-display my-4">
               You can order through apps
@@ -31,7 +31,8 @@ function Companies() {
               bibendum sed et aliquet aliquet risus tempor semper.
             </p>
           </div>
-          <div className="flex justify-center items-center flex-wrap">
+          {/* <div className="flex justify-start items-center flex-wrap"> */}
+          <div className="grid grid-cols-2 md:grid-cols-2 xl:grid-cols-3">
             {images.map((v, i) => {
               return (
                 <div className="bg-white rounded-lg p-4 m-4" key={i}>

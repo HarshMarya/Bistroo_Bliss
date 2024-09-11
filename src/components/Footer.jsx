@@ -66,10 +66,10 @@ function Footer() {
           <div className="w-full 2xl:w-1/3 ">
             <p className="font-semibold text-xl mb-4">Follow Us On Instagram</p>
             <div className="flex flex-wrap gap-4">
-              <img src={fries} alt="" className="rounded-xl w-[100px] md:w-fit" />
-              <img src={omelate} alt="" className="rounded-xl w-[100px] md:w-fit" />
-              <img src={pancake} alt="" className="rounded-xl w-[100px] md:w-fit" />
-              <img src={chilli} alt="" className="rounded-xl w-[100px] md:w-fit" />
+              <img src={fries} alt="" className="rounded-xl w-[100px] md:w-[150px]" />
+              <img src={omelate} alt="" className="rounded-xl w-[100px] md:w-[150px]" />
+              <img src={pancake} alt="" className="rounded-xl w-[100px] md:w-[150px]" />
+              <img src={chilli} alt="" className="rounded-xl w-[100px] md:w-[150px] " />
             </div>
           </div>
         </div>
