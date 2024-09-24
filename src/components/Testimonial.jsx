@@ -30,14 +30,14 @@ const data = [
 function Testimonial() {
   return (
     <>
-      <section className="p-4 md:p-10 xl:p-20 mx-auto w-10/12">
+      <section className="p-4 md:p-10 lg:p-6 xl:p-20">
         <p className="text-5xl playfair-display text-center mb-10">
           What Our Customers Say
         </p>
-        <div className="flex justify-center gap-10 flex-wrap">
+        <div className="flex justify-center gap-6 flex-wrap">
           {data.map((v, i) => {
             return (
-              <div className="bg-[#f9f9f7] w-[400px] p-6 flex flex-col gap-4 rounded-xl shadow-lg" key={i}>
+              <div className="bg-[#f9f9f7] w-[350px] p-6 flex flex-col gap-4 rounded-xl shadow-lg" key={i}>
                 <p className="text-[#AD343E] text-2xl font-semibold">
                   {v.comment}
                 </p>

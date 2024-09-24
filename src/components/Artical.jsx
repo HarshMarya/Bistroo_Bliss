@@ -5,6 +5,7 @@ import fries from "../assets/Images/fries2.svg";
 import cupcake from "../assets/Images/cupcake.svg";
 import pizza from "../assets/Images/pizza.svg";
 import wings from "../assets/Images/wings.svg";
+// https://placehold.co/600x400
 
 const cards = [
   {
@@ -44,10 +45,10 @@ function Artical() {
             </Link>
           </div>
           {/* cards */}
-          <div className="flex justify-between flex-wrap gap-4">
+          <div className="flex justify-center flex-wrap md:flex-nowrap gap-2 cursor-pointer">
             {/* card-1 */}
-            <div className="w-[350px] xl:w-[450px] h-fit rounded-xl shadow-xl bg-white">
-              <img src={burger} alt="" className="hover:scale-105 transition-all border-t-xl" />
+            <div className="w-fit h-fit rounded-xl shadow-xl bg-white hover:scale-105 transition-all">
+              <img src={burger} alt="" className=" border-t-xl" />
               <div className="flex flex-col gap-4 p-6">
                 <p className="font-semibold text-[#737865]">January 3, 2023</p>
                 <p className="font-semibold text-xl">
@@ -65,8 +66,8 @@ function Artical() {
             <div className="flex flex-wrap gap-6 justify-center w-full">
               {cards.map((val, ind) => {
                 return (
-                  <div className="w-[300px] rounded-xl shadow-xl bg-white" key={ind}>
-                    <img src={val.img} alt="" className="rounded-t-xl hover:scale-105 transition-all" />
+                  <div className="w-[300px] md:w-[250px] rounded-xl shadow-xl bg-white hover:scale-105 transition-all cursor-pointer" key={ind}>
+                    <img src={val.img} alt="" className="rounded-t-xl" />
                     <div className="flex flex-col gap-1 p-6">
                       <p className="font-semibold text-[#737865]">{val.date}</p>
                       <p className="font-semibold text-xl">{val.content}</p>

@@ -70,7 +70,7 @@ function Center() {
           </div>
         </div>
         {/* Mini cards below video container */}
-        <div className="flex justify-between gap-6 w-8/12 mx-auto my-4 flex-wrap">
+        <div className="grid md:grid-cols-3 gap-6 mx-auto my-4 flex-wrap p-4">
           <div className="flex justify-center gap-4">
             <img src={menu} alt="" />
             <div>

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 function Main() {
   return (
     <>
-      <main className="bg-bodyImg w-full h-screen bg-no-repeat bg-contain xl:bg-cover ">
+      <main className="bg-bodyImg w-full bg-no-repeat">
         <div className="text-center w-1/3 mx-auto">
           <h1 className="md:text-[90px] playfair-display">Best food for your taste</h1>
           <p className="my-4">

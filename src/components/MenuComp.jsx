@@ -47,7 +47,7 @@ function MenuComp() {
   return (
     <>
       {/* browse menu section  */}
-      <section className="relative p-4 md:p-10 xl:p-20 mx-auto w-10/12">
+      <section className="relative p-4 md:p-10 lg:p-6 xl:p-20 md:w-full">
         <p className="text-center text-5xl leading-[58px] playfair-display mb-4 md:mb-10 ">
           Browse Our Menu
         </p>
@@ -55,7 +55,7 @@ function MenuComp() {
           {cardData.map((v, i) => {
             return (
               <div
-                className="border-[1px] border-gray-200 rounded-lg w-[240px] h-[310px] sm:w-[280px] sm:h-[320px] flex flex-col justify-start items-center p-6 gap-4 text-center shadow-lg"
+                className="border-[1px] border-gray-200 rounded-lg w-10/12 sm:w-[280px] sm:h-[320px] flex flex-col justify-start items-center p-6 gap-4 text-center shadow-lg"
                 key={i}
               >
                 <div className="w-[60px] h-[60px] sm:w-[100px] sm:h-[100px] bg-[#f2f3f0] rounded-full p-4 sm:p-6 ">
@@ -77,12 +77,12 @@ function MenuComp() {
       {/* about section component */}
       <AboutComp />
       {/* offer services section */}
-      <section className="p-4 md:p-10 xl:p-20 mx-auto w-10/12">
+      <section className="p-4 md:p-6 xl:p-20 mx-auto w-10/12">
         <p className="text-5xl playfair-display mb-10 w-full lg:w-8/12">
           We also offer unique services for your events
         </p>
-        <div className="flex items-center gap-4 justify-items-center flex-wrap">
-          <div className="w-full md:w-[280px] lg:w-[300px]">
+        <div className="flex items-center justify-center gap-4 justify-items-center flex-wrap">
+          <div className="w-full md:w-[260px] lg:w-[220px]">
             <img src={catering} alt="" />
             <p className="text-xl font-semibold my-2">Catering</p>
             <p>
@@ -90,7 +90,7 @@ function MenuComp() {
               for life.
             </p>
           </div>
-          <div className="w-full md:w-[280px] xl:w-[300px]">
+          <div className="w-full md:w-[260px] lg:w-[220px] ">
             <img src={birthday} alt="" />
             <p className="text-xl font-semibold my-2">Birthday</p>
             <p>
@@ -98,7 +98,7 @@ function MenuComp() {
               for life.
             </p>
           </div>
-          <div className="w-full md:w-[280px] xl:w-[300px]">
+          <div className="w-full md:w-[260px] lg:w-[220px] ">
             <img src={wedding} alt="" />
             <p className="text-xl font-semibold my-2">Wedding</p>
             <p>
@@ -106,7 +106,7 @@ function MenuComp() {
               for life.
             </p>
           </div>
-          <div className="w-full md:w-[280px] xl:w-[300px]">
+          <div className="w-full md:w-[260px] lg:w-[220px]">
             <img src={party} alt="" />
             <p className="text-xl font-semibold my-2">Events</p>
             <p>

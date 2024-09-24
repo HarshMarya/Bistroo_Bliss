@@ -79,22 +79,22 @@ function Menu() {
           <p>you need to change to create a truly happens.</p>
         </div>
         {/* Buttons */}
-        <div className="text-center font-semibold">
-          <button className="active border-[1px] py-4 px-16 border-black rounded-full mx-2">
+        <div className="text-center flex justify-center no-scrollbar overflow-y-auto font-semibold">
+          <button className="active border-[1px] py-2 px-6 border-black rounded-full mx-2">
             <Link to="">All</Link>
           </button>
-          <button className="border-[1px] py-4 px-16 border-[#DBDFD0] rounded-full mx-2">
+          <button className="border-[1px] py-2 px-6 border-[#DBDFD0] rounded-full mx-2">
             <Link to="">Breakfast</Link>
           </button>
-          <button className="border-[1px] py-4 px-16 border-[#DBDFD0] rounded-full mx-2">
+          <button className="border-[1px] py-2 px-6 border-[#DBDFD0] rounded-full mx-2">
             <Link to="">Main Dishes</Link>
           </button>
 
-          <button className="border-[1px] py-4 px-16 border-[#DBDFD0] rounded-full mx-2">
+          <button className="border-[1px] py-2 px-6 border-[#DBDFD0] rounded-full mx-2">
             <Link to="">Drinks</Link>
           </button>
 
-          <button className="border-[1px] py-4 px-16 border-[#DBDFD0] rounded-full mx-2">
+          <button className="border-[1px] py-2 px-6 border-[#DBDFD0] rounded-full mx-2">
             <Link to="">Desserts</Link>
           </button>
         </div>
